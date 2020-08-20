@@ -1,5 +1,7 @@
-$anim-dur: 600ms;
+$anim-dur: 700ms;
 $anim-delay: $anim-dur /4;
+
+
 
 
 .button{
@@ -14,7 +16,7 @@ $anim-delay: $anim-dur /4;
     border-radius: 1.5vw;
     border:0;
     box-shadow: 0;
-    font-size: 1.5em;
+    font-size: 2em;
     font-family: $font-primary, arial, serif;
     text-align: left;
     &__lien{
@@ -24,20 +26,25 @@ $anim-delay: $anim-dur /4;
     }
     &__points{
         font-size: 0.3em;
-        padding: 0 0.5em;
-        align-self: center;         
+        padding: 0.5em;
+        align-self: center;
+         
         animation: jump-up $anim-dur backwards infinite ease-in-out alternate;
         @for $i from 1 through 3 {
             &--#{$i} {
                 animation-delay: $anim-delay * $i;
             }
-        };
-        /*&--3{
+        }
+    }
+       /* &--3{
         animation: jump-up2 $anim-dur backwards infinite ease-in-out alternate;
             animation-delay: $anim-delay*3;
-        }*/
+        }
           
-    }    
+    }*/
+        
+       
+    
 }
 @keyframes jump-up{
     
@@ -50,7 +57,7 @@ $anim-delay: $anim-dur /4;
     100%{
         transform: translateY(0);
     }
-    
+}
     /*
     20%{
         transform: translateY(-1em);
@@ -75,22 +82,25 @@ $anim-delay: $anim-dur /4;
     }
     65%{
         transform: translateY(0);
+    }
+    70%{
+        transform: translateY(0);
         animation-timing-function: cubic-bezier(.5,-.25,0.5,0);
     }
     85%{
         transform: translateY(-2em) translateX(1em) ;
         animation-timing-function: cubic-bezier(.5,0,.5,1);
+
     }
-    95%{
+    99%{
         transform: translateY(0) translateX(2em);
         animation-timing-function: cubic-bezier(.5,0,1,0);
     }
     100%{
         transform: translateY(-1em) translateX(2em);
-    }*/
+    }
 }
-        
-/*@keyframes jump-up2{
+@keyframes jump-up2{
     
     0%{
         transform: translateY(-1em);
@@ -125,21 +135,23 @@ $anim-delay: $anim-dur /4;
     65%{
         transform: translateY(0);
     }
-    70%{
-        transform: translateX(0.2em)scale(0.8 ,1.2);
-        animation-timing-function: cubic-bezier(0,-.5,.75,.5);
-    }
     75%{
-        transform: translateX(0) scale(1.2,0.8);
-        animation-timing-function: cubic-bezier(0.6,0,1,1);
+        transform: translateX(0.5em)scale(0.8 ,1.2);
+        animation-timing-function: cubic-bezier(0,-.5,.25,.75);
     }
-    90%{
+    
+    84.5%{
+        transform: translateX(0) scale(1.2,0.8);
+        animation-timing-function: cubic-bezier(0.25,0.75,1,1);
+    }
+    88.5%{
         transform: translateX(-4em) scale(1.2,0.8);
-        animation-timing-function: cubic-bezier(0,0,0.4,1);
-    } 
+        animation-timing-function: cubic-bezier(0,0,.75,.25);
+    }
+   
     100%{
         transform: translateX(-4.5em) scale(0.8 ,1.2);        
-        animation-timing-function: cubic-bezier(0.25,0.75,1,1.5);
+        animation-timing-function: cubic-bezier(0.75,0.25,0.75,1.5);
     }
 
 }*/

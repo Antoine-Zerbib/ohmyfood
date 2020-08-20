@@ -19,11 +19,11 @@ footer{
         color: $color-text;
         }
         &:hover{
-            animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) 2;
+            animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) 3;
         }
     }
 }
-$shake-intensity: 1%;
+$shake-intensity: 2%;
 @keyframes headshake {
     25% {
         // entièrement à droite
