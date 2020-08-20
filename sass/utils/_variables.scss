@@ -1,0 +1,113 @@
+/* -- Couleurs -- */
+
+$vertDeGris:#579C87;
+$jaune:#FDCB46;
+$marron:#3C1218;
+$blcPeche:#FCDFDB;
+$blc1:#FFF5FE;
+$moutarde:#C77412;
+$blc2:#F9F9F9;
+$bleuMarine:#0022D8;
+$bleu:#0889FB;
+$blc3:#FDFFFD;
+$vert:#3D923A;
+$vertPale:#BEFF7F;
+$grisClair:#E0E0E0;
+$corail:#EF4B60;
+$orange:#F6916A;
+$violet:#8F5BFE;
+
+
+
+
+
+/* Accueil */
+
+$color-primary: $vertDeGris;
+$color-text: $jaune;
+
+$font-titre: 'truenorg.otf';
+$font-primary: 'Typold Book 500.otf';
+
+
+/* -- MENUS -- */
+
+$color-shadow: $grisClair;
+
+/* informations reliées à des mixins */
+
+/* - menu Note -*/
+$color-bgMenuNote: $blcPeche;
+$color-txtMenuNote: $marron;
+
+$font-titreMenuNote: 'Devonshire-Regular.ttf';
+$fontSize-titreMenuNote:6em;
+
+$font-txtMenuNote: 'SegoePrint.ttf';
+$fontSize-txtMenuNote:7em;
+
+$color-iconeMenuNote: $corail;
+$color-iconeMenuNote2: $orange;
+$fontSize-iconeMenuNote:9em;
+
+/* - menu Chic -*/
+$color-bgMenuChic: $blc1;
+$color-txtMenuChic: $moutarde;
+$color-txtMenuChic2:$violet;
+
+$font-titreMenuChic: 'croissantone-regular.ttf';
+$fontSize-titreMenuChic:4.6em;
+
+$font-txtMenuChic: 'Notebook Bold.ttf';
+$fontSize-txtMenuChic:8em;
+
+/* - menu Deli -*/
+$color-bgMenuDeli: $blc2;
+$color-txtMenuDeli: $bleuMarine;
+$color-txtMenuDeli2: $bleu;
+
+$font-titreMenuDeli: 'DancingScript.ttf';
+$fontSize-titreMenuDeli:7em;
+
+$font-txtMenuDeli: 'SegoePrint.ttf';
+$fontSize-txtMenuDeli:7em;
+
+/* - menu Gout -*/
+$color-bgMenuGout: $blc3;
+$color-txtMenuGout: $vert;
+$color-txtMenuGout2: $vertPale;
+
+$font-titreMenuGout: 'KaushanScript-Regular.ttf';
+$fontSize-titreMenuGout:6.2em;
+
+$font-txtMenuGout: 'SegoePrint.ttf';
+$fontSize-txtMenuGout:7em;
+
+
+
+
+
+/* ESSAI DE MAP NON CONCLUANT
+
+$txt-input-palette:(
+    menuNoteTitre:(
+        size:$fontSize-titreMenuNote,
+        font:$font-titreMenuNote,        
+        couleur:$color-txtMenuNote,
+    ),
+    menuNoteText: (
+        size:$fontSize-txtMenuNote,
+        font:$font-txtMenuNote,
+        couleur:$color-txtMenuNote,
+    )
+);
+$palette:map-get($txt-input-palette, menuNoteTitre);
+@mixin txt-input-palette($menuNoteTitre){
+    
+    font-family: map-get($txt-input-palette, font), arial, serif;
+    font-size: size;
+    color:couleur;
+    @media (min-width: 599px) {
+              font-size: (size);
+    }
+}*/
