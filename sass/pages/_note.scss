@@ -1,0 +1,14 @@
+#icone{
+    &Bas{
+        font-size: $fontSize-iconeMenuNote*.3;
+    }
+    &Haut{
+        font-size: $fontSize-iconeMenuNote*.5;
+    }
+    &Haut,&Bas{
+        background: -webkit-linear-gradient( left, $color-iconeMenuNote 40% , $color-iconeMenuNote2 80%);
+    color: transparent;
+    -webkit-background-clip: text;
+    }
+}
+  
