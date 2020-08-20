@@ -535,37 +535,4 @@ footer p:hover {
   font-size: 4vw;
 }
 
-/* -- Couleurs -- */
-/* Accueil */
-/* -- MENUS -- */
-/* informations reliées à des mixins */
-/* - menu Note -*/
-/* - menu Chic -*/
-/* - menu Deli -*/
-/* - menu Gout -*/
-/* ESSAI DE MAP NON CONCLUANT
-
-$txt-input-palette:(
-    menuNoteTitre:(
-        size:$fontSize-titreMenuNote,
-        font:$font-titreMenuNote,        
-        couleur:$color-txtMenuNote,
-    ),
-    menuNoteText: (
-        size:$fontSize-txtMenuNote,
-        font:$font-txtMenuNote,
-        couleur:$color-txtMenuNote,
-    )
-);
-$palette:map-get($txt-input-palette, menuNoteTitre);
-@mixin txt-input-palette($menuNoteTitre){
-
-    font-family: map-get($txt-input-palette, font), arial, serif;
-    font-size: size;
-    color:couleur;
-    @media (min-width: 599px) {
-              font-size: (size);
-    }
-}*/
-
 /*# sourceMappingURL=style.css.map */
