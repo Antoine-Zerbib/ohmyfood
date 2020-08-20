@@ -1,0 +1,46 @@
+#menus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin:0;
+    padding-top: 3.25vw;
+    & a{
+        text-decoration: none;
+    }
+}
+
+.menu{
+    font-size: 1vw;
+    height: 100vw;
+    width: 70vw;
+    margin: 6vw 6.5vw;
+    box-shadow: 0 0 1.75vw $color-shadow;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    &__titre,&__texte{
+        @include centrer-text;
+    }
+    @media (min-width: 599px) {
+        height: 50vw;
+        width: 35vw;
+        margin: 3vw 3.25vw;
+        font-size: 0.5vw;
+         transition: opacity 200ms;
+        &:hover {
+            opacity: 0.7; 
+            h2, p{
+                transition: transform 400ms ease;
+                transform: scale(1.20)       
+            };
+            i{
+                transition: all 2000ms 150ms cubic-bezier(.42,-1,.15,1.53);
+                transform: rotateY(-2turn) scale(1.2) translateY(-1.5vw) ;
+            }
+        }
+    }
+}
+    
+/* Appliquer le BEM : Block, Elément, Modificateur*/
+

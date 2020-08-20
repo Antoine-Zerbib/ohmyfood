@@ -1,0 +1,96 @@
+
+/* Menus: Note / Chic / Deli / Gout */
+
+/* -- NOTE --*/
+#menu-note{
+    background-color: $color-bgMenuNote;
+    h2{
+        font-family: $font-titreMenuNote, arial, serif;
+        font-size: $fontSize-titreMenuNote;
+        color:$color-txtMenuNote;
+        font-weight: normal;
+        padding-bottom: 1.5vw;
+    }
+    p{
+        font-family: $font-txtMenuNote, arial, serif;
+        font-size: $fontSize-txtMenuNote;
+        color:$color-txtMenuNote;
+        text-transform: uppercase;
+        font-weight: bold;
+       
+      /* ESSAI DE MAP NON CONCLUANT  
+        @include txt-input-palette(menuNoteTitre);*/
+    }
+    i{
+        font-size: $fontSize-iconeMenuNote;
+        
+        background: -webkit-linear-gradient( left, $color-iconeMenuNote 45% , $color-iconeMenuNote2 55%);
+        color: transparent;
+        -webkit-background-clip: text;
+        
+        text-align: center;
+        margin: 0;
+        
+    }
+}
+
+/* -- CHIC --*/
+#menu-chic{
+    background-color: $color-bgMenuChic;
+    h2{
+        font-family: $font-titreMenuChic, arial, serif;
+        font-size: $fontSize-titreMenuChic;
+        font-weight: normal;
+        padding-bottom: 2vw;
+        
+        background: -webkit-linear-gradient( 280deg, $color-txtMenuChic 30% , $color-txtMenuChic2 60%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    p{
+        font-family: $font-txtMenuChic, arial, serif;
+        font-size: $fontSize-txtMenuChic;
+        font-weight: bolder;
+        color:$color-txtMenuChic;
+    }
+}
+/* -- DELI --*/
+#menu-deli{
+    background-color: $color-bgMenuDeli;
+    h2{
+        font-family: $font-titreMenuDeli, arial, serif;
+        font-size: $fontSize-titreMenuDeli;
+        padding-bottom: 2.5vw; 
+        font-weight: normal;
+        
+        background: -webkit-linear-gradient( 280deg, $color-txtMenuDeli 30% , $color-txtMenuDeli2 60%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    p{
+        font-family: $font-txtMenuDeli, arial, serif;
+        font-size: $fontSize-txtMenuDeli;
+        font-weight: normal;
+        color:$color-txtMenuDeli2;
+    }
+}
+/* -- GOUT --*/
+#menu-gout{
+    background-color: $color-bgMenuGout;
+    h2{
+        font-family: $font-titreMenuGout, arial, serif;
+        font-size: $fontSize-titreMenuGout; 
+        padding-bottom: 2.5vw; 
+        font-weight: normal;
+        
+        background: -webkit-linear-gradient( 280deg, $color-txtMenuGout 30% , $color-txtMenuGout2 60%);
+        color: transparent;
+        -webkit-background-clip: text;
+    }
+    p{
+        font-family: $font-txtMenuGout, arial, serif;
+        font-size: $fontSize-txtMenuGout;
+        font-weight: normal;
+        color:$color-txtMenuGout;
+    }
+}
