@@ -9,16 +9,10 @@
         display: flex;
         justify-content: center;        
     }
-    .titre,i{  //nom du menu
+    .titre{  //nom du menu
         margin: 0;
         font-size: 2.5em;
     }
-    i{
-    font-size: $fontSize-iconeMenuNote;
-    
-    background: -webkit-linear-gradient( left, $color-iconeMenuNote 45% , $color-iconeMenuNote2 55%);
-    color: transparent;
-    -webkit-background-clip: text;
     
 }
 
