@@ -233,6 +233,11 @@ header h1 {
   font-weight: bold;
   font-family: "truenorg.otf", arial, serif;
 }
+@media (min-width: 599px) {
+  header h1 {
+    height: 2em;
+  }
+}
 header h1 a {
   text-decoration: none;
   color: #FDCB46;
@@ -290,8 +295,6 @@ footer p:hover {
   color: #3C1218;
   text-transform: uppercase;
   font-weight: bold;
-  /* ESSAI DE MAP NON CONCLUANT  
-    @include txt-input-palette(menuNoteTitre);*/
 }
 #menu-note i {
   font-size: 9em;
