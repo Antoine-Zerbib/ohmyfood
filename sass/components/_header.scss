@@ -1,20 +1,18 @@
-header{
+.header{
     width:100%;
     background-color:$color-primary;
-    
-    & h1{ 
-        height: 1.75em;
+    text-align: center;
+    &__titre{ 
+        height:2em;
+        font-size:3.5em ;
         @media (min-width: 599px){
             height: 2em;
         }
-        text-align: center;
         margin: 0;
         padding-top: 0.5em;
-        font-size: 0.5em;
         font-weight: bold;
         font-family: $font-titre, arial, serif;
-        & a{
-            text-decoration: none;
+        &--lien{
             color: $color-text;
             }
     }
