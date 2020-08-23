@@ -1,7 +1,6 @@
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
-@import "./utils/extensions";
 @import "./utils/medias";
 
 @import "./base/base";
@@ -10,19 +9,17 @@
 @import "./components/buttons";
 @import "./components/header";
 @import "./components/footer";
-@import "./components/menus";
 
-@import "./layout/style";
 @import "./layout/container";
 
 @import "./pages/accueil";
 @import "./pages/mentions";
+@import "./pages/prochainement";
+@import "./pages/menus";
 @import "./pages/note";
 @import "./pages/chic";
 @import "./pages/deli";
 @import "./pages/gout";
-@import "./pages/menu";
-@import "./pages/prochainement";
 
 
 

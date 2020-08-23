@@ -13,6 +13,12 @@
         margin: 0;
         font-size: 2.5em;
     }
+    i{
+    font-size: $fontSize-iconeMenuNote;
+    
+    background: -webkit-linear-gradient( left, $color-iconeMenuNote 45% , $color-iconeMenuNote2 55%);
+    color: transparent;
+    -webkit-background-clip: text;
     
 }
 
@@ -28,7 +34,7 @@
 }
 .titre{
     font-family: $font-titreMenuNote, arial, serif;
-    font-size: $fontSize-titreMenuNote;
+    font-size: $fontSize-titreMenu;
     font-weight: normal;
     padding: 0;
 }

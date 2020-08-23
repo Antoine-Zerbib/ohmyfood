@@ -36,19 +36,22 @@ $color-shadow: $grisClair;
 
 /* informations reliées à des mixins */
 
+$fontSize-txtMenu:4.5em;
+$fontSize-titreMenu:3em;
+    
 /* - menu Note -*/
 $color-bgMenuNote: $blcPeche;
 $color-txtMenuNote: $marron;
 
 $font-titreMenuNote: 'Devonshire-Regular.ttf';
-$fontSize-titreMenuNote:6em;
+;
 
 $font-txtMenuNote: 'SegoePrint.ttf';
-$fontSize-txtMenuNote:7em;
+
 
 $color-iconeMenuNote: $corail;
 $color-iconeMenuNote2: $orange;
-$fontSize-iconeMenuNote:9em;
+$fontSize-iconeMenuNote:4.5em;
 
 /* - menu Chic -*/
 $color-bgMenuChic: $blc1;
@@ -83,31 +86,3 @@ $fontSize-titreMenuGout:6.2em;
 $font-txtMenuGout: 'SegoePrint.ttf';
 $fontSize-txtMenuGout:7em;
 
-
-
-
-
-/* ESSAI DE MAP NON CONCLUANT
-
-$txt-input-palette:(
-    menuNoteTitre:(
-        size:$fontSize-titreMenuNote,
-        font:$font-titreMenuNote,        
-        couleur:$color-txtMenuNote,
-    ),
-    menuNoteText: (
-        size:$fontSize-txtMenuNote,
-        font:$font-txtMenuNote,
-        couleur:$color-txtMenuNote,
-    )
-);
-$palette:map-get($txt-input-palette, menuNoteTitre);
-@mixin txt-input-palette($menuNoteTitre){
-    
-    font-family: map-get($txt-input-palette, font), arial, serif;
-    font-size: size;
-    color:couleur;
-    @media (min-width: 599px) {
-              font-size: (size);
-    }
-}*/

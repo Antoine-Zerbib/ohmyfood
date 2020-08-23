@@ -7,30 +7,10 @@
 /* - menu Chic -*/
 /* - menu Deli -*/
 /* - menu Gout -*/
-/* ESSAI DE MAP NON CONCLUANT
+a {
+  text-decoration: none;
+}
 
-$txt-input-palette:(
-    menuNoteTitre:(
-        size:$fontSize-titreMenuNote,
-        font:$font-titreMenuNote,        
-        couleur:$color-txtMenuNote,
-    ),
-    menuNoteText: (
-        size:$fontSize-txtMenuNote,
-        font:$font-txtMenuNote,
-        couleur:$color-txtMenuNote,
-    )
-);
-$palette:map-get($txt-input-palette, menuNoteTitre);
-@mixin txt-input-palette($menuNoteTitre){
-
-    font-family: map-get($txt-input-palette, font), arial, serif;
-    font-size: size;
-    color:couleur;
-    @media (min-width: 599px) {
-              font-size: (size);
-    }
-}*/
 /* Titre */
 @font-face {
   font-family: "truenorg.otf";
@@ -71,7 +51,7 @@ $palette:map-get($txt-input-palette, menuNoteTitre);
 }
 .button {
   display: flex;
-  margin: 2.5vw auto 14vw auto;
+  margin: auto;
   padding-left: 1em;
   padding-top: 0.2em;
   height: 2em;
@@ -81,15 +61,9 @@ $palette:map-get($txt-input-palette, menuNoteTitre);
   border-radius: 1.5vw;
   border: 0;
   box-shadow: 0;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: "Typold Book 500.otf", arial, serif;
   text-align: left;
-  /* &--3{
-      animation: jump-up2 $anim-dur backwards infinite ease-in-out alternate;
-          animation-delay: $anim-delay*3;
-      }
-
-  }*/
 }
 .button__lien {
   padding-right: 0.5em;
@@ -123,118 +97,25 @@ $palette:map-get($txt-input-palette, menuNoteTitre);
     transform: translateY(0);
   }
 }
-/*
-    20%{
-        transform: translateY(-1em);
-    }
-    25%{
-        transform: translateY(0);
-    }
-    35%{
-        transform: translateY(0);
-    }
-    40%{
-        transform: translateY(-1em);
-    }
-    45%{
-        transform: translateY(0);
-    }
-    55%{
-        transform: translateY(0);
-    }
-    60%{
-        transform: translateY(-1em);
-    }
-    65%{
-        transform: translateY(0);
-    }
-    70%{
-        transform: translateY(0);
-        animation-timing-function: cubic-bezier(.5,-.25,0.5,0);
-    }
-    85%{
-        transform: translateY(-2em) translateX(1em) ;
-        animation-timing-function: cubic-bezier(.5,0,.5,1);
-
-    }
-    99%{
-        transform: translateY(0) translateX(2em);
-        animation-timing-function: cubic-bezier(.5,0,1,0);
-    }
-    100%{
-        transform: translateY(-1em) translateX(2em);
-    }
-}
-@keyframes jump-up2{
-
-    0%{
-        transform: translateY(-1em);
-    }
-    5%{
-        transform: translateY(0);
-    }
-    15%{
-        transform: translateY(0);
-    }
-    20%{
-        transform: translateY(-1em);
-    }
-    25%{
-        transform: translateY(0);
-    }
-    35%{
-        transform: translateY(0);
-    }
-    40%{
-        transform: translateY(-1em);
-    }
-    45%{
-        transform: translateY(0);
-    }
-    55%{
-        transform: translateY(0);
-    }
-    60%{
-        transform: translateY(-1em);
-    }
-    65%{
-        transform: translateY(0);
-    }
-    75%{
-        transform: translateX(0.5em)scale(0.8 ,1.2);
-        animation-timing-function: cubic-bezier(0,-.5,.25,.75);
-    }
-
-    84.5%{
-        transform: translateX(0) scale(1.2,0.8);
-        animation-timing-function: cubic-bezier(0.25,0.75,1,1);
-    }
-    88.5%{
-        transform: translateX(-4em) scale(1.2,0.8);
-        animation-timing-function: cubic-bezier(0,0,.75,.25);
-    }
-
-    100%{
-        transform: translateX(-4.5em) scale(0.8 ,1.2);        
-        animation-timing-function: cubic-bezier(0.75,0.25,0.75,1.5);
-    }
-
-}*/
-header {
+.header {
   width: 100%;
   background-color: #579C87;
-}
-header h1 {
-  height: 1.75em;
   text-align: center;
+}
+.header__titre {
+  height: 2em;
+  font-size: 3.5em;
   margin: 0;
   padding-top: 0.5em;
-  font-size: 0.5em;
   font-weight: bold;
   font-family: "truenorg.otf", arial, serif;
 }
-header h1 a {
-  text-decoration: none;
+@media (min-width: 599px) {
+  .header__titre {
+    height: 2em;
+  }
+}
+.header__titre--lien {
   color: #FDCB46;
 }
 
@@ -243,21 +124,17 @@ footer {
   bottom: 0;
   left: center;
   width: 100%;
-  max-width: 1000px;
-  min-width: 600px;
   background-color: #579C87;
   display: flex;
   justify-content: space-between;
-  height: 3em;
+  text-align: center;
 }
 footer p {
-  margin: auto 2.5vh;
-  font-family: font-primary;
+  margin: 0.7em;
   font-size: 1.5em;
   font-family: "Typold Book 500.otf", arial, serif;
 }
 footer p a {
-  text-decoration: none;
   color: #FDCB46;
 }
 footer p:hover {
@@ -272,150 +149,137 @@ footer p:hover {
     transform: translateX(-2%);
   }
 }
-/* Menus: Note / Chic / Deli / Gout */
-/* -- NOTE --*/
-#menu-note {
-  background-color: #FCDFDB;
+#container {
+  margin: 0 auto;
+  padding-bottom: 8em;
+  width: 100%;
+  max-width: 1000px;
 }
-#menu-note h2 {
-  font-family: "Devonshire-Regular.ttf", arial, serif;
-  font-size: 6em;
-  color: #3C1218;
-  font-weight: normal;
-  padding-bottom: 1.5vw;
+
+/* Appliquer le BEM : Block, Elément, Modificateur*/
+/* -- MISE EN PLACE DES MENUS --*/
+main a {
+  padding: 5%;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
 }
-#menu-note p {
-  font-family: "SegoePrint.ttf", arial, serif;
-  font-size: 7em;
-  color: #3C1218;
-  text-transform: uppercase;
-  font-weight: bold;
-  /* ESSAI DE MAP NON CONCLUANT  
-    @include txt-input-palette(menuNoteTitre);*/
-}
-#menu-note i {
-  font-size: 9em;
-  background: -webkit-linear-gradient(left, #EF4B60 45%, #F6916A 55%);
-  color: transparent;
-  -webkit-background-clip: text;
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  height: 120vw;
+  box-shadow: 0 0 1.75vw #E0E0E0;
+  /*@media (min-width: 599px) {
+      height: 50vw;
+      width: 35vw;
+      margin: 3vw 3.25vw;
+      font-size: 0.5vw;
+      transition: opacity 200ms;
+      &:hover {
+          opacity: 0.7; 
+          & h2, & p{
+              transition: transform 400ms ease;
+              transform: scale(1.20)       
+          };
+          & i{
+              transition: all 2000ms 150ms cubic-bezier(.42,-1,.15,1.53);
+              transform: rotateY(-2turn) scale(1.2) translateY(-1.5vw) ;
+          }
+      }
+  }*/
+}
+.menu h2, .menu p, .menu i {
   margin: 0;
 }
 
-/* -- CHIC --*/
-#menu-chic {
+/* -- MENUS: Note / Chic / Deli / Gout -- */
+/* - NOTE -*/
+.note {
+  background-color: #FCDFDB;
+}
+.note__titre {
+  font-family: "Devonshire-Regular.ttf", arial, serif;
+  font-size: 3em;
+  color: #3C1218;
+  font-weight: normal;
+}
+.note__texte {
+  font-family: "SegoePrint.ttf", arial, serif;
+  font-size: 4.5em;
+  color: #3C1218;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.note i {
+  font-size: 4.5em;
+  background: -webkit-linear-gradient(left, #EF4B60 45%, #F6916A 55%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+/* - CHIC -*/
+.chic {
   background-color: #FFF5FE;
 }
-#menu-chic h2 {
+.chic__titre {
   font-family: "croissantone-regular.ttf", arial, serif;
-  font-size: 4.6em;
+  font-size: 2.7em;
   font-weight: normal;
   padding-bottom: 2vw;
   background: -webkit-linear-gradient(280deg, #C77412 30%, #8F5BFE 60%);
   color: transparent;
   -webkit-background-clip: text;
 }
-#menu-chic p {
+.chic__texte {
   font-family: "Notebook Bold.ttf", arial, serif;
-  font-size: 8em;
+  font-size: 4.5em;
   font-weight: bolder;
   color: #C77412;
 }
 
-/* -- DELI --*/
-#menu-deli {
+/* - DELI -*/
+.deli {
   background-color: #F9F9F9;
 }
-#menu-deli h2 {
+.deli__titre {
   font-family: "DancingScript.ttf", arial, serif;
-  font-size: 7em;
+  font-size: 3em;
   padding-bottom: 2.5vw;
   font-weight: normal;
   background: -webkit-linear-gradient(280deg, #0022D8 30%, #0889FB 60%);
   color: transparent;
   -webkit-background-clip: text;
 }
-#menu-deli p {
+.deli__texte {
   font-family: "SegoePrint.ttf", arial, serif;
-  font-size: 7em;
+  font-size: 4.5em;
   font-weight: normal;
   color: #0889FB;
 }
 
-/* -- GOUT --*/
-#menu-gout {
+/* - GOUT -*/
+.gout {
   background-color: #FDFFFD;
 }
-#menu-gout h2 {
+.gout__titre {
   font-family: "KaushanScript-Regular.ttf", arial, serif;
-  font-size: 6.2em;
+  font-size: 3em;
   padding-bottom: 2.5vw;
   font-weight: normal;
   background: -webkit-linear-gradient(280deg, #3D923A 30%, #BEFF7F 60%);
   color: transparent;
   -webkit-background-clip: text;
 }
-#menu-gout p {
+.gout__texte {
   font-family: "SegoePrint.ttf", arial, serif;
-  font-size: 7em;
+  font-size: 4.5em;
   font-weight: normal;
   color: #3D923A;
 }
 
-#container {
-  margin: 0 auto;
-  width: fit-content;
-  max-width: 1000px;
-}
-
-#menus {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  margin: 0;
-  padding-top: 3.25vw;
-}
-#menus a {
-  text-decoration: none;
-}
-
-.menu {
-  font-size: 1vw;
-  height: 100vw;
-  width: 70vw;
-  margin: 6vw 6.5vw;
-  box-shadow: 0 0 1.75vw #E0E0E0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.menu__titre, .menu__texte {
-  text-align: center;
-  margin: 0;
-}
-@media (min-width: 599px) {
-  .menu {
-    height: 50vw;
-    width: 35vw;
-    margin: 3vw 3.25vw;
-    font-size: 0.5vw;
-    transition: opacity 200ms;
-  }
-  .menu:hover {
-    opacity: 0.7;
-  }
-  .menu:hover h2, .menu:hover p {
-    transition: transform 400ms ease;
-    transform: scale(1.2);
-  }
-  .menu:hover i {
-    transition: all 2000ms 150ms cubic-bezier(0.42, -1, 0.15, 1.53);
-    transform: rotateY(-2turn) scale(1.2) translateY(-1.5vw);
-  }
-}
-
-/* Appliquer le BEM : Block, Elément, Modificateur*/
 #docs {
   text-align: center;
   margin-top: 17vh;
@@ -423,16 +287,11 @@ footer p:hover {
   font-size: 4vw;
 }
 
-#iconeBas {
-  font-size: 2.7em;
-}
-#iconeHaut {
-  font-size: 4.5em;
-}
-#iconeHaut, #iconeBas {
-  background: -webkit-linear-gradient(left, #EF4B60 40%, #F6916A 80%);
-  color: transparent;
-  -webkit-background-clip: text;
+#maj {
+  text-align: center;
+  margin-top: 25vh;
+  font-family: "KaushanScript-Regular.ttf", arial, serif;
+  font-size: 4vw;
 }
 
 .page {
@@ -451,7 +310,7 @@ footer p:hover {
   font-size: 2.5em;
 }
 .page i {
-  font-size: 9em;
+  font-size: 4.5em;
   background: -webkit-linear-gradient(left, #EF4B60 45%, #F6916A 55%);
   color: transparent;
   -webkit-background-clip: text;
@@ -468,7 +327,7 @@ footer p:hover {
 
 .titre {
   font-family: "Devonshire-Regular.ttf", arial, serif;
-  font-size: 6em;
+  font-size: 3em;
   font-weight: normal;
   padding: 0;
 }
@@ -528,11 +387,16 @@ footer p:hover {
   font-size: 0.8em;
 }
 
-#maj {
-  text-align: center;
-  margin-top: 25vh;
-  font-family: "KaushanScript-Regular.ttf", arial, serif;
-  font-size: 4vw;
+#iconeBas {
+  font-size: 1.35em;
+}
+#iconeHaut {
+  font-size: 2.25em;
+}
+#iconeHaut, #iconeBas {
+  background: -webkit-linear-gradient(left, #EF4B60 40%, #F6916A 80%);
+  color: transparent;
+  -webkit-background-clip: text;
 }
 
 /*# sourceMappingURL=style.css.map */

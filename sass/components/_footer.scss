@@ -3,19 +3,17 @@ footer{
     bottom: 0;
     left: center;
     width: 100%;
-    max-width: 1000px;
-    min-width: 600px;
+    
     background-color: $color-primary;
     display: flex;
     justify-content: space-between;
-    height: 3em;
+    text-align: center;
     & p{
-        margin: auto 2.5vh;
-        font-family: font-primary;
+      
+        margin: 0.7em;
         font-size: 1.5em;
         font-family: $font-primary, arial, serif;
         & a{
-        text-decoration: none;
         color: $color-text;
         }
         &:hover{
