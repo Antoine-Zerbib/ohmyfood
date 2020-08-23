@@ -51,7 +51,7 @@ a {
 }
 .button {
   display: flex;
-  margin: auto;
+  margin: 1em auto;
   padding-left: 1em;
   height: 2em;
   width: 12em;
@@ -125,6 +125,7 @@ footer {
   bottom: 0;
   left: center;
   width: 100%;
+  max-width: 1000px;
   background-color: #579C87;
   display: flex;
   justify-content: space-between;
@@ -152,7 +153,7 @@ footer p:hover {
 }
 #container {
   margin: 0 auto;
-  padding-bottom: 6em;
+  padding-bottom: 4em;
   width: 100%;
   max-width: 1000px;
 }
@@ -285,14 +286,14 @@ main a {
   text-align: center;
   margin-top: 17vh;
   font-family: "KaushanScript-Regular.ttf", arial, serif;
-  font-size: 4vw;
+  font-size: 5.5vw;
 }
 
 #maj {
   text-align: center;
   margin-top: 25vh;
   font-family: "KaushanScript-Regular.ttf", arial, serif;
-  font-size: 4vw;
+  font-size: 6vw;
 }
 
 .page {
