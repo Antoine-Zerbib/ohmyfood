@@ -121,7 +121,7 @@ main a
     background-color: $color-bgMenuGout;
     &__titre{
         font-family: $font-titreMenuGout, arial, serif;
-        font-size: $fontSize-titreMenu; 
+        font-size: $fontSize-titreMenu*1.1; 
         padding-bottom: 2.5vw; 
         font-weight: normal;
         
