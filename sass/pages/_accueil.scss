@@ -101,7 +101,7 @@ main a
     background-color: $color-bgMenuDeli;
     &__titre{
         font-family: $font-titreMenuDeli, arial, serif;
-        font-size: $fontSize-titreMenu;
+        font-size: $fontSize-titreMenu+1.1;
         padding-bottom: 2.5vw; 
         font-weight: normal;
         

@@ -24,6 +24,7 @@ $anim-delay: $anim-dur /4;
     &__points{
         font-size: 0.3em;
         padding: 0.5em;
+        margin-top: 0.8rem;
         align-self: center;
          
         animation: jump-up $anim-dur backwards infinite ease-in-out alternate;
