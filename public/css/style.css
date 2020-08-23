@@ -50,10 +50,10 @@ a {
   src: url("KaushanScript-Regular.ttf");
 }
 .button {
+  padding-top: 1%;
   display: flex;
   margin: auto;
   padding-left: 1em;
-  padding-top: 0.2em;
   height: 2em;
   width: 12em;
   background-color: #579C87;
@@ -266,7 +266,7 @@ main a {
 }
 .gout__titre {
   font-family: "KaushanScript-Regular.ttf", arial, serif;
-  font-size: 3em;
+  font-size: 3.3em;
   padding-bottom: 2.5vw;
   font-weight: normal;
   background: -webkit-linear-gradient(280deg, #3D923A 30%, #BEFF7F 60%);
