@@ -52,7 +52,6 @@ a {
 .button {
   display: flex;
   margin: auto;
-  padding-top: 0.25em;
   padding-left: 1em;
   height: 2em;
   width: 12em;
@@ -69,6 +68,7 @@ a {
   padding-right: 0.5em;
   text-decoration: none;
   color: #FDCB46;
+  align-self: center;
 }
 .button__points {
   font-size: 0.3em;
@@ -131,7 +131,7 @@ footer {
 }
 footer p {
   margin: 0.7em;
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-family: "Typold Book 500.otf", arial, serif;
 }
 footer p a {

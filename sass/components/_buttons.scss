@@ -4,7 +4,6 @@ $anim-delay: $anim-dur /4;
 .button{
     display: flex;
     margin: auto;
-    padding-top:0.25em;
     padding-left: 1em;
     height: 2em;
     width: 12em;
@@ -20,6 +19,7 @@ $anim-delay: $anim-dur /4;
         padding-right: 0.5em;
         text-decoration: none;
         color: $color-text;
+         align-self: center;
     }
     &__points{
         font-size: 0.3em;
