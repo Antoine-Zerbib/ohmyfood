@@ -52,6 +52,7 @@ a {
 .button {
   display: flex;
   margin: auto;
+  padding-top: 0.25em;
   padding-left: 1em;
   height: 2em;
   width: 12em;
