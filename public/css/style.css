@@ -73,6 +73,7 @@ a {
 .button__points {
   font-size: 0.3em;
   padding: 0.5em;
+  margin-top: 0.8rem;
   align-self: center;
   animation: jump-up 700ms backwards infinite ease-in-out alternate;
 }
@@ -131,7 +132,7 @@ footer {
 }
 footer p {
   margin: 0.7em;
-  font-size: 1.1em;
+  font-size: 1em;
   font-family: "Typold Book 500.otf", arial, serif;
 }
 footer p a {
@@ -246,7 +247,7 @@ main a {
 }
 .deli__titre {
   font-family: "DancingScript.ttf", arial, serif;
-  font-size: 3em;
+  font-size: 4.1em;
   padding-bottom: 2.5vw;
   font-weight: normal;
   background: -webkit-linear-gradient(280deg, #0022D8 30%, #0889FB 60%);
