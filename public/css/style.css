@@ -131,7 +131,7 @@ footer {
 }
 footer p {
   margin: 0.7em;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-family: "Typold Book 500.otf", arial, serif;
 }
 footer p a {
@@ -151,7 +151,7 @@ footer p:hover {
 }
 #container {
   margin: 0 auto;
-  padding-bottom: 8em;
+  padding-bottom: 6em;
   width: 100%;
   max-width: 1000px;
 }
