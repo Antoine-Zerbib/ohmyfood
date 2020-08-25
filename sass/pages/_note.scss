@@ -7,8 +7,8 @@
     }
     &Haut,&Bas{
         background: -webkit-linear-gradient( left, $color-iconeMenuNote 40% , $color-iconeMenuNote2 80%);
-    color: transparent;
-    -webkit-background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
     }
 }
 #LastTitreNote{ //titre du menu à la fin
@@ -20,4 +20,6 @@
             padding: 0.2em;
         }
 }
-  
+.pasDePrix{
+    padding-bottom: 2em;
+}
