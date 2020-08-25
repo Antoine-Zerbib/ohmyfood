@@ -8,6 +8,7 @@
     font-family: $font-titreMenuNote, arial, serif;
     font-size: $fontSize-titreMenu*.7;
     font-weight: normal;
+    padding: 0 0 1em 0;
 }
 .cat__titre--souligneNote{
     background-color:$color-txtMenuNote;
@@ -27,13 +28,16 @@
     }
 }
 #LastTitreNote{ //titre du menu à la fin
-        display: flex;  //icone à gauche au lieu d'au-dessus
-        justify-content: center;
-        font-size: 0.7em;
-        padding-top: 1em;
+    display: flex;  //icone à gauche au lieu d'au-dessus
+    justify-content: center;
+    font-size: 0.7em;  
+    padding-top: 1em;
         & i{
             padding: 0.2em;
         }
+        & h2{
+            padding: 0;
+    }
 }
 .cat .pasMiroir{
     -webkit-transform: scaleX(1);

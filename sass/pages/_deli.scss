@@ -1,0 +1,18 @@
+.page__menuDeli{
+    background-color: $color-bgMenuDeli;
+    color:black;
+    font-family: $font-txtMenuDeli, arial, serif;
+}
+.titreDeli{
+    font-family: $font-titreMenuDeli, arial, serif;
+    font-size: $fontSize-titreMenu*.7;
+    font-weight: normal;
+    background: -webkit-linear-gradient( 280deg, $color-txtMenuDeli 30% , $color-txtMenuDeli2 60%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.cat{
+    &__titre--souligneDeli{
+    background-color:black;
+    }
+}
