@@ -363,7 +363,7 @@ main a {
   list-style: none;
 }
 .list li {
-  line-height: 2em;
+  line-height: 1.5em;
   padding-bottom: 1.5em;
 }
 .list__plat {
