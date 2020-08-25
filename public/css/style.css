@@ -341,7 +341,7 @@ main a {
   transform: scaleX(1);
 }
 .cat__trait {
-  padding-top: 1.5em;
+  padding-top: 1.3em;
   width: 30%;
 }
 .cat__trait:first-child {
@@ -474,6 +474,25 @@ main a {
 }
 
 .cat__titre--souligneDeli {
+  background-color: black;
+}
+
+.page__menuGout {
+  background-color: #FDFFFD;
+  color: black;
+  font-family: "SegoePrint.ttf", arial, serif;
+}
+
+.titreGout {
+  font-family: "KaushanScript-Regular.ttf", arial, serif;
+  font-size: 2.1em;
+  font-weight: normal;
+  background: -webkit-linear-gradient(280deg, #3D923A 30%, #BEFF7F 60%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.cat__titre--souligneGout {
   background-color: black;
 }
 
