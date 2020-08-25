@@ -1,9 +1,7 @@
-#container{
+body{ //ici j'utilise une balise pour que l'id marche dans le media
     margin:0 auto;
     padding-bottom:4em;
     width: 100%;
- 
-//    POUR GRAND ECRAN
-    max-width: 1000px;
-    
+    min-width: 300px;
+    max-width: 700px;
 }
