@@ -1,3 +1,18 @@
+
+.page__menuNote{
+    background-color: $color-bgMenuNote;
+    color:$color-txtMenuNote;
+    font-family: $font-txtMenuNote, arial, serif;
+}
+.titreNote{
+    font-family: $font-titreMenuNote, arial, serif;
+    font-size: $fontSize-titreMenu*.7;
+    font-weight: normal;
+}
+.cat__titre--souligneNote{
+    background-color:$color-txtMenuNote;
+}
+
 #icone{
     &Bas{
         font-size: $fontSize-iconeMenuNote*.45;
@@ -20,7 +35,7 @@
             padding: 0.2em;
         }
 }
-.pasDePrix{
-    line-height: 1.5em;
-    padding-bottom: 1.5em;
+.cat .pasMiroir{
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }

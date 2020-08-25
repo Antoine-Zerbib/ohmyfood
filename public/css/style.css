@@ -306,17 +306,11 @@ main a {
 .page__menu {
   margin: 5%;
   padding: 5%;
-  background-color: #FCDFDB;
-  color: #3C1218;
   text-align: center;
-  font-family: "SegoePrint.ttf", arial, serif;
   box-shadow: 0 0 1.75vw #E0E0E0;
 }
 
 .titre {
-  font-family: "Devonshire-Regular.ttf", arial, serif;
-  font-size: 2.1em;
-  font-weight: normal;
   padding: 0;
   margin: 0;
 }
@@ -326,7 +320,7 @@ main a {
   justify-content: space-between;
 }
 .cat__titre {
-  padding-top: 1.5em;
+  padding: 1.5em 0.5em 0 0.5em;
   font-size: 1em;
   font-weight: bold;
   margin: 0;
@@ -339,7 +333,6 @@ main a {
   border-radius: 100%;
   width: 10em;
   height: 0.2em;
-  background-color: #3C1218;
   transform: scaleX(0);
   transform-origin: 0;
   transition: transform 1000ms cubic-bezier(0.49, 0.18, 0.23, 1);
@@ -351,6 +344,10 @@ main a {
   padding-top: 1.5em;
   width: 30%;
 }
+.cat__trait:first-child {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 .cat__trait img {
   width: 100%;
 }
@@ -361,14 +358,15 @@ main a {
   justify-content: center;
   padding: 0;
   list-style: none;
+  line-height: 1.5em;
 }
 .list li {
-  line-height: 1.5em;
-  padding-bottom: 1.5em;
+  padding-top: 1.5em;
 }
 .list__plat {
   /*text-align: left;*/
   font-size: 0.75em;
+  font-weight: lighter;
   /*width:85%;*/
 }
 .list__prix {
@@ -376,6 +374,22 @@ main a {
   font-weight: bold;
   font-size: 0.8em;
   /*width:15%;*/
+}
+
+.page__menuNote {
+  background-color: #FCDFDB;
+  color: #3C1218;
+  font-family: "SegoePrint.ttf", arial, serif;
+}
+
+.titreNote {
+  font-family: "Devonshire-Regular.ttf", arial, serif;
+  font-size: 2.1em;
+  font-weight: normal;
+}
+
+.cat__titre--souligneNote {
+  background-color: #3C1218;
 }
 
 #iconeBas {
@@ -400,9 +414,28 @@ main a {
   padding: 0.2em;
 }
 
-.pasDePrix {
-  line-height: 1.5em;
-  padding-bottom: 1.5em;
+.cat .pasMiroir {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.page__menuDeli {
+  background-color: #F9F9F9;
+  color: #0022D8;
+  font-family: "SegoePrint.ttf", arial, serif;
+}
+
+.titreChic {
+  font-family: "DancingScript.ttf", arial, serif;
+  font-size: 2.1em;
+  font-weight: normal;
+  background: -webkit-linear-gradient(280deg, #0022D8 30%, #0889FB 60%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.cat__titre--souligneChic {
+  background-color: #0022D8;
 }
 
 /*# sourceMappingURL=style.css.map */
