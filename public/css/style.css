@@ -244,7 +244,7 @@ main a {
 
 /* - DELI -*/
 .deli {
-  background-color: #F9F9F9;
+  background-color: #EDEFEF;
 }
 .deli__titre {
   font-family: "DancingScript.ttf", arial, serif;
@@ -311,7 +311,7 @@ main a {
 }
 
 .titre {
-  padding: 0;
+  padding: 2em;
   margin: 0;
 }
 
@@ -376,6 +376,10 @@ main a {
   /*width:15%;*/
 }
 
+.intercourse {
+  padding-bottom: 2em;
+}
+
 .page__menuNote {
   background-color: #FCDFDB;
   color: #3C1218;
@@ -386,6 +390,7 @@ main a {
   font-family: "Devonshire-Regular.ttf", arial, serif;
   font-size: 2.1em;
   font-weight: normal;
+  padding: 0 0 1em 0;
 }
 
 .cat__titre--souligneNote {
@@ -413,19 +418,53 @@ main a {
 #LastTitreNote i {
   padding: 0.2em;
 }
+#LastTitreNote h2 {
+  padding: 0;
+}
 
 .cat .pasMiroir {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
 
-.page__menuDeli {
-  background-color: #F9F9F9;
-  color: #0022D8;
-  font-family: "SegoePrint.ttf", arial, serif;
+.page__menuChic {
+  background-color: #FFF5FE;
+  color: #C77412;
+  font-family: "Notebook Bold.ttf", arial, serif;
 }
 
 .titreChic {
+  font-family: "croissantone-regular.ttf", arial, serif;
+  font-size: 2.1em;
+  font-weight: normal;
+  background: -webkit-linear-gradient(280deg, #C77412 30%, #8F5BFE 60%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.cat__titre--souligneChic {
+  background-color: #C77412;
+}
+
+.page__menuChic .list__plat {
+  font-family: "Notebook Regular.ttf";
+}
+
+.plat {
+  color: #A56799;
+}
+
+.dessert {
+  color: #6E4CCC;
+}
+
+.page__menuDeli {
+  background-color: #EDEFEF;
+  color: black;
+  font-family: "SegoePrint.ttf", arial, serif;
+}
+
+.titreDeli {
   font-family: "DancingScript.ttf", arial, serif;
   font-size: 2.1em;
   font-weight: normal;
@@ -434,8 +473,8 @@ main a {
   -webkit-background-clip: text;
 }
 
-.cat__titre--souligneChic {
-  background-color: #0022D8;
+.cat__titre--souligneDeli {
+  background-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
