@@ -1,49 +1,34 @@
 
 .page{
-    padding:2.5em 3.5em 5.5em 3.5em;
-    background-color: $color-bgMenuNote;
-    color:$color-txtMenuNote;
-    text-align: center;
-    font-family: $font-txtMenuNote, arial, serif;
-    .section__list{    //séparation plat/prix
-        display: flex;
-        justify-content: center;        
+    &__titre{
+        text-align: center;
+        font-family: arial, sans-serif;
+        font-weight: bold;
+        font-size: 2em;
+        margin: 1.5em auto 0 auto;        
     }
-    .titre{  //nom du menu
-        margin: 0;
-        font-size: 2.5em;
-    }
-    i{
-    font-size: $fontSize-iconeMenuNote;
-    
-    background: -webkit-linear-gradient( left, $color-iconeMenuNote 45% , $color-iconeMenuNote2 55%);
-    color: transparent;
-    -webkit-background-clip: text;
-    
-}
-
-    section:last-child{ //nom du menu à la fin
-        display: flex;  //icone à gauche au lieu d'au-dessus
-        justify-content: center;
-        font-size: 0.7em;
-        padding-top: 1em;
-        i{
-            padding: 0.2em;
-        }
+    &__menu{
+        margin:5%;
+        padding:5%;
+        background-color: $color-bgMenuNote;
+        color:$color-txtMenuNote;
+        text-align: center;
+        font-family: $font-txtMenuNote, arial, serif;
+         box-shadow: 0 0 1.75vw $color-shadow;
     }
 }
 .titre{
     font-family: $font-titreMenuNote, arial, serif;
-    font-size: $fontSize-titreMenu;
+    font-size: $fontSize-titreMenu*.7;
     font-weight: normal;
     padding: 0;
+    margin: 0;
 }
 .cat{
     display: flex;
     justify-content:space-between;
     &__titre{
         padding-top: 1.5em;
-        
         font-size: 1em;
         font-weight: bold;
         margin:0;
@@ -75,24 +60,24 @@
     }
 }
 .list {
-    &:nth-child(1){
-        width:90%
-    }
-    &:nth-child(2){
-        width:10%
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    
     line-height: 2em;
     padding: 0;
     list-style: none;
     &__plat{
-        text-align: left;
+        /*text-align: left;*/
         font-size: 0.75em;
+        /*width:85%;*/
     }
     &__prix{
-        text-align: right;
+        /*text-align: right;*/
         font-weight: bold;
         font-size: 0.8em;
-    }
+        /*width:15%;*/
+        }
     
 }
 
