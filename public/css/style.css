@@ -311,7 +311,7 @@ main a {
 }
 
 .titre {
-  padding: 2em;
+  padding: 2em 0;
   margin: 0;
 }
 
@@ -365,7 +365,7 @@ main a {
 }
 .list__plat {
   /*text-align: left;*/
-  font-size: 0.75em;
+  font-size: 0.8em;
   font-weight: lighter;
   /*width:85%;*/
 }
@@ -431,6 +431,9 @@ main a {
   background-color: #FFF5FE;
   color: #C77412;
   font-family: "Notebook Bold.ttf", arial, serif;
+}
+.page__menuChic .list__plat {
+  font-size: 0.9em;
 }
 
 .titreChic {

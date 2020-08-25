@@ -2,9 +2,11 @@
     background-color: $color-bgMenuChic;
     color:$color-txtMenuChic;
     font-family: $font-txtMenuChic, arial, serif;
+    & .list__plat{
+        font-size: 0.9em;
+    }
 }
 .titreChic{
-    
     font-family: $font-titreMenuChic, arial, serif;
     font-size: $fontSize-titreMenu*.7;
     font-weight: normal;
@@ -12,6 +14,7 @@
     color: transparent;
     -webkit-background-clip: text;
 }
+
 .cat{
     &__titre--souligneChic{
     background-color:$color-txtMenuChic;
