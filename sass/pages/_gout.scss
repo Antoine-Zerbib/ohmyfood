@@ -1,0 +1,19 @@
+.page__menuGout{
+    background-color: $color-bgMenuGout;
+    color:black;
+    font-family: $font-txtMenuGout, arial, serif;
+}
+.titreGout{
+    font-family: $font-titreMenuGout, arial, serif;
+    font-size: $fontSize-titreMenu*.7;
+    font-weight: normal;
+   
+    background: -webkit-linear-gradient( 280deg, $color-txtMenuGout 30% , $color-txtMenuGout2 60%);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.cat{
+    &__titre--souligneGout{
+    background-color:black;
+    }
+}
