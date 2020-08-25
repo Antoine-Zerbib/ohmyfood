@@ -7,6 +7,148 @@
 /* - menu Chic -*/
 /* - menu Deli -*/
 /* - menu Gout -*/
+/*@mixin grand-ecran {
+    @media(min-width:900px){
+        max-width: 1200px;
+    }
+}*/
+@media (min-width: 900px) {
+  #container {
+    max-width: 1200px;
+    padding-bottom: 7em;
+  }
+  #container .header__titre {
+    height: 2em;
+    font-size: 5em;
+  }
+  #container main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5%;
+  }
+  #container main a {
+    padding: 0;
+    width: 50%;
+  }
+  #container main a .menu {
+    font-size: 0.7em;
+    margin: 40px;
+    height: 50vw;
+    max-height: 599px;
+    width: 80%;
+    max-width: 459px;
+    transition: opacity 200ms;
+  }
+  #container main a .menu:hover {
+    opacity: 0.7;
+  }
+  #container main a .menu:hover h2, #container main a .menu:hover p {
+    transition: transform 400ms ease;
+    transform: scale(1.2);
+  }
+  #container main a .menu:hover i {
+    transition: all 2000ms 150ms cubic-bezier(0.42, -1, 0.15, 1.53);
+    transform: rotateY(-2turn) scale(1.2) translateY(-1.5vw);
+  }
+  #container main a .note {
+    font-size: 0.85em;
+  }
+  #container .button {
+    font-size: 3em;
+  }
+  #container footer {
+    max-width: 1200px;
+  }
+  #container footer p {
+    font-size: 2em;
+  }
+  #container .page {
+    font-size: 1.9em;
+  }
+  #container .page__titre {
+    font-size: 1.7em;
+    margin-top: 0.5em;
+  }
+  #container .page article {
+    padding: 90px;
+  }
+  #container .page section .titre {
+    padding: 0;
+  }
+  #container .page section .intercourse {
+    padding-bottom: 1em;
+  }
+  #container .page section div .list {
+    flex-direction: row;
+  }
+  #container .page section div .list__plat {
+    width: 90%;
+    font-size: 0.643em;
+    text-align: left;
+    padding-top: 0;
+  }
+  #container .page section div .list__prix {
+    width: 10%;
+    padding-top: 0;
+    text-align: right;
+    font-size: 0.7em;
+  }
+  #container .page .page__menuChic .titre {
+    padding: 1.25em 0;
+    font-size: 1.3em;
+  }
+  #container .page .page__menuChic .cat__titre {
+    font-size: 0.7em;
+    padding-top: 1.75em;
+  }
+  #container .page .page__menuChic div {
+    padding-top: 1em;
+  }
+  #container .page .page__menuChic div .list {
+    margin: 0 auto;
+    width: 80%;
+  }
+  #container .page .page__menuChic div .list__plat {
+    font-family: "Notebook Regular.ttf";
+  }
+  #container .page .page__menuChic div .list__prix {
+    font-family: "Notebook Regular.ttf";
+  }
+  #container .page .page__menuDeli .cat__titre {
+    font-size: 0.7em;
+    font-weight: normal;
+    padding-top: 2.1em;
+  }
+  #container .page .page__menuDeli div .list {
+    margin: 0 auto;
+    width: 80%;
+  }
+  #container .page .page__menuDeli div .list__plat {
+    font-size: 0.55em;
+  }
+  #container .page .page__menuGout .titre {
+    font-size: 2.5em;
+  }
+  #container .page .page__menuGout .cat__titre {
+    font-size: 0.6em;
+    font-weight: normal;
+    padding-top: 3em;
+  }
+  #container .page .page__menuGout .intercourse {
+    padding: 0;
+  }
+  #container .page .page__menuGout div {
+    padding-top: 1em;
+  }
+  #container .page .page__menuGout div .list {
+    margin: 0 auto;
+    width: 80%;
+  }
+  #container .page .page__menuGout div .list__plat {
+    font-size: 0.51em;
+  }
+}
 a {
   text-decoration: none;
 }
@@ -111,11 +253,6 @@ a {
   font-weight: bold;
   font-family: "truenorg.otf", arial, serif;
 }
-@media (min-width: 599px) {
-  .header__titre {
-    height: 2em;
-  }
-}
 .header__titre--lien {
   color: #FDCB46;
 }
@@ -125,7 +262,7 @@ footer {
   bottom: 0;
   left: center;
   width: 100%;
-  max-width: 1000px;
+  max-width: 700px;
   background-color: #579C87;
   display: flex;
   justify-content: space-between;
@@ -151,11 +288,12 @@ footer p:hover {
     transform: translateX(-2%);
   }
 }
-#container {
+body {
   margin: 0 auto;
   padding-bottom: 4em;
   width: 100%;
-  max-width: 1000px;
+  min-width: 300px;
+  max-width: 700px;
 }
 
 /* Appliquer le BEM : Block, Elément, Modificateur*/
@@ -173,25 +311,9 @@ main a {
   justify-content: center;
   text-align: center;
   height: 120vw;
+  max-height: 53em;
+  min-height: 24em;
   box-shadow: 0 0 1.75vw #E0E0E0;
-  /*@media (min-width: 599px) {
-      height: 50vw;
-      width: 35vw;
-      margin: 3vw 3.25vw;
-      font-size: 0.5vw;
-      transition: opacity 200ms;
-      &:hover {
-          opacity: 0.7; 
-          & h2, & p{
-              transition: transform 400ms ease;
-              transform: scale(1.20)       
-          };
-          & i{
-              transition: all 2000ms 150ms cubic-bezier(.42,-1,.15,1.53);
-              transform: rotateY(-2turn) scale(1.2) translateY(-1.5vw) ;
-          }
-      }
-  }*/
 }
 .menu h2, .menu p, .menu i {
   margin: 0;
@@ -413,6 +535,7 @@ main a {
   display: flex;
   justify-content: center;
   font-size: 0.7em;
+  font-family: "Devonshire-Regular.ttf", arial, serif;
   padding-top: 1em;
 }
 #LastTitreNote i {
@@ -420,6 +543,8 @@ main a {
 }
 #LastTitreNote h2 {
   padding: 0;
+  font-size: 2em;
+  font-weight: normal;
 }
 
 .cat .pasMiroir {

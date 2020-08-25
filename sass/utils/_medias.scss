@@ -1,2 +1,164 @@
-//$mediaTabletteOrdi:min-width: 599px; Ne marche pas
-//$media:min-width: 599px
+
+@media(min-width:900px){
+    
+           
+    
+    #container{
+        max-width: 1200px;
+        padding-bottom: 7em;
+        
+        //PAGE D'ACCUEIL
+        & .header__titre{
+            height: 2em;
+            font-size: 5em
+        }
+        & main{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 5%;
+            & a{
+                padding:0;
+                width: 50%;
+                & .menu{
+                    font-size: 0.7em;
+                    margin: 40px;
+                    height: 50vw;
+                    max-height: 599px;
+                    width: 80%;
+                    max-width: 459px;
+                    //Effet transition activé sur grand écran.
+                    transition: opacity 200ms;
+                    &:hover {
+                        opacity: 0.7; 
+                    & h2, & p{
+                        transition: transform 400ms ease;
+                        transform: scale(1.20)       
+                        };
+                        & i{
+                            transition: all 2000ms 150ms cubic-bezier(.42,-1,.15,1.53);
+                            transform: rotateY(-2turn) scale(1.2) translateY(-1.5vw) ;
+                        }
+                    }
+                }
+                & .note{font-size: 0.85em}
+            }
+        }
+        & .button{
+            font-size: 3em;
+        }
+        & footer{    
+            max-width:1200px;
+            & p{
+                font-size: 2em;
+            }
+        }
+        
+        
+        //PAGES MENUS
+
+        .page{
+            font-size:1.9em;
+            &__titre{
+                font-size: 1.7em;
+                margin-top: 0.5em;
+            }
+            & article{
+                padding: 90px;
+            } section{
+                & .titre{
+                    padding: 0;
+                }
+                & .intercourse{
+                    padding-bottom: 1em;
+                }
+                & div .list{
+                    flex-direction: row;
+                    &__plat{
+                        width:90%;
+                        font-size: 0.643em;
+                        text-align: left;
+                        padding-top: 0;
+                    }
+                    &__prix{
+                        width:10%;
+                        padding-top: 0;
+                        text-align: right;
+                        font-size: 0.7em;
+                    }
+                }
+            }
+            & .page__menuChic{
+                & .titre{
+                    padding: 1.25em 0;
+                    font-size: 1.3em;
+                }
+                & .cat__titre{
+                    font-size: 0.7em;
+                    padding-top: 1.75em;
+                }
+                & div{
+                    padding-top: 1em;
+                    & .list{
+                        margin: 0 auto;
+                        width:80%;
+                        &__plat{
+                            font-family: 'Notebook Regular.ttf'; 
+                        }
+                        &__prix{
+                            font-family: 'Notebook Regular.ttf';
+                        }
+                    }
+                }
+            }
+            & .page__menuDeli{
+                 
+                & .cat__titre{
+                    font-size: 0.7em;
+                    font-weight: normal;
+                    padding-top: 2.1em;
+                }
+                & div{
+                   
+                    & .list{
+                        margin: 0 auto;
+                        width:80%;
+                        &__plat{
+                            font-size: 0.55em; 
+                        }
+                    }
+                }
+            }
+            & .page__menuGout{
+                 & .titre{
+                     font-size: 2.5em;                   
+                }
+                & .cat__titre{
+                    font-size: 0.6em;
+                    font-weight: normal;
+                    padding-top: 3em;
+                }
+                & .intercourse{
+                    padding: 0;
+                }
+                & div{
+                    padding-top: 1em;
+                    & .list{
+                        margin: 0 auto;
+                        width:80%;
+                        &__plat{
+                            font-size: 0.51em; 
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+        
+        
+        //fin du container
+    }
+    
+}
+

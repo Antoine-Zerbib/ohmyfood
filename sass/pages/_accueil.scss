@@ -3,43 +3,22 @@
 
 /* -- MISE EN PLACE DES MENUS --*/
 
-main a
-{
+main a{
     padding: 5%;
     font-size: 1em;
-    
-    display: flex;
+    display: flex;//mise en blocks pour activer le padding des liens
     flex-direction: column;
-  
-    
 }
 .menu{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    
-    height: 120vw;
+    height:120vw;
+    max-height:53em ;
+    min-height: 24em;
     box-shadow: 0 0 1.75vw $color-shadow;
-    
-    /*@media (min-width: 599px) {
-        height: 50vw;
-        width: 35vw;
-        margin: 3vw 3.25vw;
-        font-size: 0.5vw;
-        transition: opacity 200ms;
-        &:hover {
-            opacity: 0.7; 
-            & h2, & p{
-                transition: transform 400ms ease;
-                transform: scale(1.20)       
-            };
-            & i{
-                transition: all 2000ms 150ms cubic-bezier(.42,-1,.15,1.53);
-                transform: rotateY(-2turn) scale(1.2) translateY(-1.5vw) ;
-            }
-        }
-    }*/
+
     & h2,& p,& i{
         margin: 0;
     }
