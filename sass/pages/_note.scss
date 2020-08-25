@@ -1,14 +1,23 @@
 #icone{
     &Bas{
-        font-size: $fontSize-iconeMenuNote*.3;
+        font-size: $fontSize-iconeMenuNote*.45;
     }
     &Haut{
-        font-size: $fontSize-iconeMenuNote*.5;
+        font-size: $fontSize-iconeMenuNote*.7;
     }
     &Haut,&Bas{
         background: -webkit-linear-gradient( left, $color-iconeMenuNote 40% , $color-iconeMenuNote2 80%);
     color: transparent;
     -webkit-background-clip: text;
     }
+}
+#LastTitreNote{ //titre du menu à la fin
+        display: flex;  //icone à gauche au lieu d'au-dessus
+        justify-content: center;
+        font-size: 0.7em;
+        padding-top: 1em;
+        & i{
+            padding: 0.2em;
+        }
 }
   
