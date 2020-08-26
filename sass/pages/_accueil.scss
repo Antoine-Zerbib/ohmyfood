@@ -5,7 +5,7 @@
 
 main a{
     padding: 5%;
-    font-size: 1em;
+    font-size: 0.9em;
     display: flex;//mise en blocks pour activer le padding des liens
     flex-direction: column;
 }
@@ -18,7 +18,6 @@ main a{
     max-height:53em ;
     min-height: 24em;
     box-shadow: 0 0 1.75vw $color-shadow;
-
     & h2,& p,& i{
         margin: 0;
     }
@@ -80,7 +79,7 @@ main a{
     background-color: $color-bgMenuDeli;
     &__titre{
         font-family: $font-titreMenuDeli, arial, serif;
-        font-size: $fontSize-titreMenu+1.1;
+        font-size: $fontSize-titreMenu*1.1;
         padding-bottom: 2.5vw; 
         font-weight: normal;
         

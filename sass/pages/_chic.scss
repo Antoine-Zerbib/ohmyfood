@@ -15,10 +15,10 @@
     -webkit-background-clip: text;
 }
 
-.cat{
-    &__titre--souligneChic{
+.cat__titre{
+    &--souligneChic{
     background-color:$color-txtMenuChic;
-    }
+    }   
 }
 .page__menuChic .list__plat{
     font-family: 'Notebook Regular.ttf'
