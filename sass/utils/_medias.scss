@@ -5,7 +5,7 @@
     
     #container{
         max-width: 1500px;
-        padding-bottom: 7em;
+        padding-bottom: 3em;//Espace en bas du site pour que le bouton ne soit pas sous le footer
         
         //PAGE D'ACCUEIL
         
@@ -25,6 +25,10 @@
                 width: 50%;
                 & .menu{
                     font-size: 0.7em;
+                    @media(min-width:1200px){
+                //Texte agrandit pour très grand écran
+                        font-size: 1em;
+                    }
                     margin: 40px;
                     height: 50vw;
                     max-height: 759px;
@@ -44,17 +48,23 @@
                         }
                     }
                 }
-                & .note{font-size: 0.85em}
+                & .note{
+                    font-size: 0.85em;
+                    @media(min-width:1200px){
+                //Texte agrandit pour très grand écran
+                        font-size: 1.2em;
+                    }
+                }
             }
         }
-        & .button{
+        /*& .button{
+        GROSSIR LE BOUTON NE REND PAS BIEN SUR GRAND ECRAN
             font-size: 3em;
-        }
+        }*/
         & footer{
             max-width:1500px;
             /*& p{
         GROSSIR LE FOOTER NE REND PAS BIEN SUR GRAND ECRAN
-
                 font-size: 2em;
             }*/
         }
@@ -93,11 +103,6 @@
                     }
                 }
             }
-            & .page__menuNote{
-                & .titre{
-                    font-size: 2em;
-                }
-            }
             & .page__menuChic{
                 & .titre{
                     padding: 1.25em 0;
@@ -131,7 +136,7 @@
                 & .cat__titre{
                     font-size: 0.7em;
                     font-weight: normal;
-                    padding-top: 2.1em;
+                    padding-top: 2.5em;
                 }
                 & div{
                    
@@ -151,7 +156,7 @@
                 & .cat__titre{
                     font-size: 0.6em;
                     font-weight: normal;
-                    padding-top: 3em;
+                    padding-top: 2.5em;
                 }
                 & .intercourse{
                     padding: 0;

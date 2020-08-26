@@ -15,11 +15,15 @@
 @media (min-width: 900px) {
   #container {
     max-width: 1500px;
-    padding-bottom: 7em;
+    padding-bottom: 3em;
     /*& .header__titre{ 
     GROSSIR LE HEADER NE REND PAS BIEN SUR GRAND ECRAN
         height: 2em;
         font-size: 5em
+    }*/
+    /*& .button{
+    GROSSIR LE BOUTON NE REND PAS BIEN SUR GRAND ECRAN
+        font-size: 3em;
     }*/
   }
   #container main {
@@ -40,6 +44,13 @@
     width: 80%;
     transition: opacity 200ms;
   }
+}
+@media (min-width: 900px) and (min-width: 1200px) {
+  #container main a .menu {
+    font-size: 1em;
+  }
+}
+@media (min-width: 900px) {
   #container main a .menu:hover {
     opacity: 0.7;
   }
@@ -51,20 +62,27 @@
     transition: all 2000ms 150ms cubic-bezier(0.42, -1, 0.15, 1.53);
     transform: rotateY(-2turn) scale(1.2) translateY(-1.5vw);
   }
+}
+@media (min-width: 900px) {
   #container main a .note {
     font-size: 0.85em;
   }
-  #container .button {
-    font-size: 3em;
+}
+@media (min-width: 900px) and (min-width: 1200px) {
+  #container main a .note {
+    font-size: 1.2em;
   }
+}
+@media (min-width: 900px) {
   #container footer {
     max-width: 1500px;
     /*& p{
     GROSSIR LE FOOTER NE REND PAS BIEN SUR GRAND ECRAN
-
             font-size: 2em;
         }*/
   }
+}
+@media (min-width: 900px) {
   #container .page {
     font-size: 1.9em;
   }
@@ -96,9 +114,6 @@
     text-align: right;
     font-size: 0.7em;
   }
-  #container .page .page__menuNote .titre {
-    font-size: 2em;
-  }
   #container .page .page__menuChic .titre {
     padding: 1.25em 0;
     font-size: 1.3em;
@@ -123,7 +138,7 @@
   #container .page .page__menuDeli .cat__titre {
     font-size: 0.7em;
     font-weight: normal;
-    padding-top: 2.1em;
+    padding-top: 2.5em;
   }
   #container .page .page__menuDeli div .list {
     margin: 0 auto;
@@ -138,7 +153,7 @@
   #container .page .page__menuGout .cat__titre {
     font-size: 0.6em;
     font-weight: normal;
-    padding-top: 3em;
+    padding-top: 2.5em;
   }
   #container .page .page__menuGout .intercourse {
     padding: 0;
