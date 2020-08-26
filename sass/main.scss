@@ -1,7 +1,7 @@
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
-@import "./utils/medias";
+
 
 @import "./base/base";
 @import "./base/typography";
@@ -21,5 +21,6 @@
 @import "./pages/deli";
 @import "./pages/gout";
 
-
+//Media en dernier pour écraser les codes précédents
+@import "./utils/medias";
 

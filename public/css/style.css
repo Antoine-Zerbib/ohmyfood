@@ -12,194 +12,6 @@
         max-width: 1200px;
     }
 }*/
-@media (min-width: 900px) {
-  #container {
-    max-width: 1500px;
-    padding-bottom: 3em;
-    /*& .header__titre{ 
-    GROSSIR LE HEADER NE REND PAS BIEN SUR GRAND ECRAN
-        height: 2em;
-        font-size: 5em
-    }*/
-    /*& .button{
-    GROSSIR LE BOUTON NE REND PAS BIEN SUR GRAND ECRAN
-        font-size: 3em;
-    }*/
-  }
-  #container main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 5%;
-  }
-  #container main a {
-    padding: 0;
-    width: 50%;
-  }
-  #container main a .menu {
-    font-size: 0.7em;
-    margin: 40px;
-    height: 50vw;
-    max-height: 759px;
-    width: 80%;
-    transition: opacity 200ms;
-  }
-}
-@media (min-width: 900px) and (min-width: 1299px) {
-  #container main a .menu {
-    font-size: 1em;
-  }
-}
-@media (min-width: 900px) {
-  #container main a .menu:hover {
-    opacity: 0.7;
-  }
-  #container main a .menu:hover h2, #container main a .menu:hover p {
-    transition: transform 400ms ease;
-    transform: scale(1.2);
-  }
-  #container main a .menu:hover i {
-    transition: all 2000ms 150ms cubic-bezier(0.42, -1, 0.15, 1.53);
-    transform: rotateY(-2turn) scale(1.2) translateY(-1.5vw);
-  }
-}
-@media (min-width: 900px) {
-  #container main a .note {
-    font-size: 0.85em;
-  }
-}
-@media (min-width: 900px) and (min-width: 1299px) {
-  #container main a .note {
-    font-size: 1.2em;
-  }
-}
-@media (min-width: 900px) {
-  #container footer {
-    max-width: 1500px;
-    /*& p{
-    GROSSIR LE FOOTER NE REND PAS BIEN SUR GRAND ECRAN
-            font-size: 2em;
-        }*/
-  }
-}
-@media (min-width: 900px) {
-  #container .page {
-    font-size: 1.9em;
-  }
-  #container .page__titre {
-    font-size: 1.7em;
-    margin-top: 0.5em;
-  }
-  #container .page article {
-    padding: 90px;
-  }
-  #container .page__menu section .titre {
-    padding: 0;
-  }
-  #container .page__menu section .cat__titre {
-    display: flex;
-    flex-direction: column;
-  }
-  #container .page__menu section .cat__titre--souligne {
-    display: inline-block;
-    margin: auto;
-    border-radius: 100%;
-    width: 100%;
-    height: 0.2em;
-    transform: scaleX(0);
-    transform-origin: 0;
-    transition: transform 1000ms cubic-bezier(0.49, 0.18, 0.23, 1);
-  }
-  #container .page__menu section .cat__titre:hover > .cat__titre--souligne:nth-child(1) {
-    transform: scaleX(1);
-  }
-  #container .page__menu .intercourse {
-    padding-bottom: 1em;
-  }
-  #container .page__menu div .list {
-    flex-direction: row;
-  }
-  #container .page__menu div .list__plat {
-    width: 90%;
-    font-size: 0.643em;
-    text-align: left;
-    padding-top: 0;
-  }
-  #container .page__menu div .list__prix {
-    width: 10%;
-    padding-top: 0;
-    text-align: right;
-    font-size: 0.7em;
-  }
-  #container .page .page__menuChic .titre {
-    padding: 1.25em 0;
-    font-size: 1.3em;
-  }
-  #container .page .page__menuChic .cat__titre {
-    font-size: 0.7em;
-    padding-top: 1.75em;
-  }
-  #container .page .page__menuChic .cat__titre--souligne {
-    font-size: 0.2em;
-  }
-  #container .page .page__menuChic div {
-    padding-top: 1em;
-  }
-  #container .page .page__menuChic div .list {
-    margin: 0 auto;
-    width: 80%;
-  }
-  #container .page .page__menuChic div .list__plat {
-    font-family: "Notebook Regular.ttf";
-  }
-  #container .page .page__menuChic div .list__prix {
-    font-family: "Notebook Regular.ttf";
-  }
-  #container .page .page__menuDeli .cat__titre {
-    font-size: 0.7em;
-    font-weight: normal;
-    padding-top: 2.5em;
-  }
-  #container .page .page__menuDeli div .list {
-    margin: 0 auto;
-    width: 80%;
-  }
-  #container .page .page__menuDeli div .list__plat {
-    font-size: 0.55em;
-  }
-  #container .page .page__menuGout .titre {
-    font-size: 2.5em;
-  }
-  #container .page .page__menuGout .cat__titre {
-    font-size: 0.6em;
-    font-weight: normal;
-    padding-top: 2.5em;
-  }
-  #container .page .page__menuGout .cat__titre--souligne {
-    font-size: 0.2em;
-  }
-  #container .page .page__menuGout .intercourse {
-    padding: 0;
-  }
-  #container .page .page__menuGout div {
-    padding-top: 1em;
-  }
-  #container .page .page__menuGout div .list {
-    margin: 0 auto;
-    width: 80%;
-  }
-  #container .page .page__menuGout div .list__plat {
-    font-size: 0.51em;
-  }
-}
-#bgViolet {
-  background-color: #A56799;
-}
-
-#bgBleu {
-  background-color: #6E4CCC;
-}
-
 a {
   text-decoration: none;
 }
@@ -658,6 +470,194 @@ main a {
 
 .cat__titre--souligneGout {
   background-color: black;
+}
+
+@media (min-width: 900px) {
+  #container {
+    max-width: 1500px;
+    padding-bottom: 3em;
+    /*& .header__titre{ 
+    GROSSIR LE HEADER NE REND PAS BIEN SUR GRAND ECRAN
+        height: 2em;
+        font-size: 5em
+    }*/
+    /*& .button{
+    GROSSIR LE BOUTON NE REND PAS BIEN SUR GRAND ECRAN
+        font-size: 3em;
+    }*/
+  }
+  #container main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5%;
+  }
+  #container main a {
+    padding: 0;
+    width: 50%;
+  }
+  #container main a .menu {
+    font-size: 0.7em;
+    margin: 40px;
+    height: 50vw;
+    max-height: 759px;
+    width: 80%;
+    transition: opacity 200ms;
+  }
+}
+@media (min-width: 900px) and (min-width: 1299px) {
+  #container main a .menu {
+    font-size: 1em;
+  }
+}
+@media (min-width: 900px) {
+  #container main a .menu:hover {
+    opacity: 0.7;
+  }
+  #container main a .menu:hover h2, #container main a .menu:hover p {
+    transition: transform 400ms ease;
+    transform: scale(1.2);
+  }
+  #container main a .menu:hover i {
+    transition: all 2000ms 150ms cubic-bezier(0.42, -1, 0.15, 1.53);
+    transform: rotateY(-2turn) scale(1.2) translateY(-1.5vw);
+  }
+}
+@media (min-width: 900px) {
+  #container main a .note {
+    font-size: 0.85em;
+  }
+}
+@media (min-width: 900px) and (min-width: 1299px) {
+  #container main a .note {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 900px) {
+  #container footer {
+    max-width: 1500px;
+    /*& p{
+    GROSSIR LE FOOTER NE REND PAS BIEN SUR GRAND ECRAN
+            font-size: 2em;
+        }*/
+  }
+}
+@media (min-width: 900px) {
+  #container .page {
+    font-size: 1.9em;
+  }
+  #container .page__titre {
+    font-size: 1.7em;
+    margin-top: 0.5em;
+  }
+  #container .page article {
+    padding: 90px;
+  }
+  #container .page__menu section .titre {
+    padding: 0;
+  }
+  #container .page__menu section .cat__titre {
+    display: flex;
+    flex-direction: column;
+  }
+  #container .page__menu section .cat__titre--souligne {
+    display: inline-block;
+    margin: auto;
+    border-radius: 100%;
+    width: 100%;
+    height: 0.2em;
+    transform: scaleX(0);
+    transform-origin: 0;
+    transition: transform 1000ms cubic-bezier(0.49, 0.18, 0.23, 1);
+  }
+  #container .page__menu section .cat__titre:hover > .cat__titre--souligne:nth-child(1) {
+    transform: scaleX(1);
+  }
+  #container .page__menu .intercourse {
+    padding-bottom: 1em;
+  }
+  #container .page__menu div .list {
+    flex-direction: row;
+  }
+  #container .page__menu div .list__plat {
+    width: 90%;
+    font-size: 0.643em;
+    text-align: left;
+    padding-top: 0;
+  }
+  #container .page__menu div .list__prix {
+    width: 10%;
+    padding-top: 0;
+    text-align: right;
+    font-size: 0.7em;
+  }
+  #container .page .page__menuChic .titre {
+    padding: 1.25em 0;
+    font-size: 1.3em;
+  }
+  #container .page .page__menuChic .cat__titre {
+    font-size: 0.7em;
+    padding-top: 1.75em;
+  }
+  #container .page .page__menuChic .cat__titre--souligne {
+    font-size: 0.2em;
+  }
+  #container .page .page__menuChic div {
+    padding-top: 1em;
+  }
+  #container .page .page__menuChic div .list {
+    margin: 0 auto;
+    width: 80%;
+  }
+  #container .page .page__menuChic div .list__plat {
+    font-family: "Notebook Regular.ttf";
+  }
+  #container .page .page__menuChic div .list__prix {
+    font-family: "Notebook Regular.ttf";
+  }
+  #container .page .page__menuDeli .cat__titre {
+    font-size: 0.7em;
+    font-weight: normal;
+    padding-top: 2.5em;
+  }
+  #container .page .page__menuDeli div .list {
+    margin: 0 auto;
+    width: 80%;
+  }
+  #container .page .page__menuDeli div .list__plat {
+    font-size: 0.55em;
+  }
+  #container .page .page__menuGout .titre {
+    font-size: 2.5em;
+  }
+  #container .page .page__menuGout .cat__titre {
+    font-size: 0.6em;
+    font-weight: normal;
+    padding-top: 2.5em;
+  }
+  #container .page .page__menuGout .cat__titre--souligne {
+    font-size: 0.2em;
+  }
+  #container .page .page__menuGout .intercourse {
+    padding: 0;
+  }
+  #container .page .page__menuGout div {
+    padding-top: 1em;
+  }
+  #container .page .page__menuGout div .list {
+    margin: 0 auto;
+    width: 80%;
+  }
+  #container .page .page__menuGout div .list__plat {
+    font-size: 0.51em;
+  }
+}
+#bgViolet {
+  background-color: #A56799;
+}
+
+#bgBleu {
+  background-color: #6E4CCC;
 }
 
 /*# sourceMappingURL=style.css.map */
