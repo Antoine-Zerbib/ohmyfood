@@ -14,12 +14,13 @@
 }*/
 @media (min-width: 900px) {
   #container {
-    max-width: 1200px;
+    max-width: 1500px;
     padding-bottom: 7em;
-  }
-  #container .header__titre {
-    height: 2em;
-    font-size: 5em;
+    /*& .header__titre{ 
+    GROSSIR LE HEADER NE REND PAS BIEN SUR GRAND ECRAN
+        height: 2em;
+        font-size: 5em
+    }*/
   }
   #container main {
     display: flex;
@@ -35,9 +36,8 @@
     font-size: 0.7em;
     margin: 40px;
     height: 50vw;
-    max-height: 599px;
+    max-height: 759px;
     width: 80%;
-    max-width: 459px;
     transition: opacity 200ms;
   }
   #container main a .menu:hover {
@@ -58,10 +58,12 @@
     font-size: 3em;
   }
   #container footer {
-    max-width: 1200px;
-  }
-  #container footer p {
-    font-size: 2em;
+    max-width: 1500px;
+    /*& p{
+    GROSSIR LE FOOTER NE REND PAS BIEN SUR GRAND ECRAN
+
+            font-size: 2em;
+        }*/
   }
   #container .page {
     font-size: 1.9em;
@@ -93,6 +95,9 @@
     padding-top: 0;
     text-align: right;
     font-size: 0.7em;
+  }
+  #container .page .page__menuNote .titre {
+    font-size: 2em;
   }
   #container .page .page__menuChic .titre {
     padding: 1.25em 0;
