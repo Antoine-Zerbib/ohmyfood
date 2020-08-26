@@ -26,23 +26,6 @@
         font-size: 1em;
         font-weight: bold;
         margin:0;
-        display: flex;
-        flex-direction: column;
-        &--souligne{
-            display: inline-block;
-            margin: auto;
-            border-radius: 100%;
-            width: 10em;
-            height: 0.2em;
-            transform: scaleX(0);
-            transform-origin: 0 ;//la barre part de la gauche 
-            transition: transform 1000ms cubic-bezier(.49,.18,.23,1);
-            }
-        &:hover{
-            & > .cat__titre--souligne:nth-child(1){
-                 transform: scaleX(1);
-                }
-        }
     }
     &__trait{ //déco autour des titres de catégories
         padding-top: 1.3em;

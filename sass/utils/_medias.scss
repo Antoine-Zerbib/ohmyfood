@@ -25,7 +25,7 @@
                 width: 50%;
                 & .menu{
                     font-size: 0.7em;
-                    @media(min-width:1200px){
+                    @media(min-width:1299px){
                 //Texte agrandit pour très grand écran
                         font-size: 1em;
                     }
@@ -50,7 +50,7 @@
                 }
                 & .note{
                     font-size: 0.85em;
-                    @media(min-width:1200px){
+                    @media(min-width:1299px){
                 //Texte agrandit pour très grand écran
                         font-size: 1.2em;
                     }
@@ -80,9 +80,31 @@
             }
             & article{
                 padding: 90px;
-            } section{
-                & .titre{
-                    padding: 0;
+            }
+            &__menu{
+                & section{
+                    & .titre{
+                        padding: 0;
+                    }
+                    & .cat__titre{
+                        display: flex;
+                        flex-direction: column;
+                        &--souligne{
+                            display: inline-block;
+                            margin: auto;
+                            border-radius: 100%;
+                            width:100%;
+                            height: 0.2em;
+                            transform: scaleX(0);
+                            transform-origin: 0 ;//la barre part de la gauche 
+                            transition: transform 1000ms cubic-bezier(.49,.18,.23,1);
+                        }
+                        &:hover{
+                            & > .cat__titre--souligne:nth-child(1){
+                                transform: scaleX(1);
+                            }
+                        }
+                    }
                 }
                 & .intercourse{
                     padding-bottom: 1em;
@@ -101,7 +123,7 @@
                         text-align: right;
                         font-size: 0.7em;
                     }
-                }
+                } 
             }
             & .page__menuChic{
                 & .titre{
@@ -112,9 +134,8 @@
                     &__titre{
                     font-size: 0.7em;
                     padding-top: 1.75em;
-                    
                         &--souligne{
-                          // ERREUR HAUTEUR A REGLER SUR GOUT ET CHIC
+                            font-size: 0.2em;  
                         }
                     }
                 }
@@ -150,13 +171,16 @@
                 }
             }
             & .page__menuGout{
-                 & .titre{
-                     font-size: 2.5em;                   
+                & .titre{
+                    font-size: 2.5em;                   
                 }
                 & .cat__titre{
                     font-size: 0.6em;
                     font-weight: normal;
                     padding-top: 2.5em;
+                    &--souligne{
+                            font-size: 0.2em;
+                    }
                 }
                 & .intercourse{
                     padding: 0;
@@ -173,12 +197,13 @@
                 }
             }
         }
-        
-        
-        
-        
-        //fin du container
     }
-    
 }
 
+//correction couleur des traits de soulignage du menu chic
+#bgViolet{
+    background-color: #A56799;
+}
+#bgBleu{
+    background-color: #6E4CCC;
+}
