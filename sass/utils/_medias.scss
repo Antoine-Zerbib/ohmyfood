@@ -4,14 +4,17 @@
            
     
     #container{
-        max-width: 1200px;
+        max-width: 1500px;
         padding-bottom: 7em;
         
         //PAGE D'ACCUEIL
-        & .header__titre{
+        
+        /*& .header__titre{ 
+        GROSSIR LE HEADER NE REND PAS BIEN SUR GRAND ECRAN
             height: 2em;
             font-size: 5em
-        }
+        }*/
+        
         & main{
             display: flex;
             flex-wrap: wrap;
@@ -24,9 +27,9 @@
                     font-size: 0.7em;
                     margin: 40px;
                     height: 50vw;
-                    max-height: 599px;
+                    max-height: 759px;
                     width: 80%;
-                    max-width: 459px;
+                   
                     //Effet transition activé sur grand écran.
                     transition: opacity 200ms;
                     &:hover {
@@ -47,11 +50,13 @@
         & .button{
             font-size: 3em;
         }
-        & footer{    
-            max-width:1200px;
-            & p{
+        & footer{
+            max-width:1500px;
+            /*& p{
+        GROSSIR LE FOOTER NE REND PAS BIEN SUR GRAND ECRAN
+
                 font-size: 2em;
-            }
+            }*/
         }
         
         
@@ -88,14 +93,25 @@
                     }
                 }
             }
+            & .page__menuNote{
+                & .titre{
+                    font-size: 2em;
+                }
+            }
             & .page__menuChic{
                 & .titre{
                     padding: 1.25em 0;
                     font-size: 1.3em;
                 }
-                & .cat__titre{
+                & .cat{
+                    &__titre{
                     font-size: 0.7em;
                     padding-top: 1.75em;
+                    
+                        &--souligne{
+                          // ERREUR HAUTEUR A REGLER SUR GOUT ET CHIC
+                        }
+                    }
                 }
                 & div{
                     padding-top: 1em;
@@ -112,7 +128,6 @@
                 }
             }
             & .page__menuDeli{
-                 
                 & .cat__titre{
                     font-size: 0.7em;
                     font-weight: normal;
