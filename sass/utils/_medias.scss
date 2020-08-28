@@ -89,7 +89,7 @@
                     & .cat__titre{
                         display: flex;
                         flex-direction: column;
-                        &--souligne{
+                        &--hover{
                             display: inline-block;
                             margin: auto;
                             border-radius: 100%;
@@ -100,7 +100,7 @@
                             transition: transform 1000ms cubic-bezier(.49,.18,.23,1);
                         }
                         &:hover{
-                            & > .cat__titre--souligne:nth-child(1){
+                            & > .cat__titre--hover:nth-child(1){
                                 transform: scaleX(1);
                             }
                         }
@@ -134,7 +134,7 @@
                     &__titre{
                     font-size: 0.7em;
                     padding-top: 1.75em;
-                        &--souligne{
+                        &--hover{
                             font-size: 0.2em;  
                         }
                     }
@@ -178,7 +178,7 @@
                     font-size: 0.6em;
                     font-weight: normal;
                     padding-top: 2.5em;
-                    &--souligne{
+                    &--hover{
                             font-size: 0.2em;
                     }
                 }
